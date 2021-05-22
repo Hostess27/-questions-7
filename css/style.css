@@ -1,19 +1,34 @@
-.container-fluid {
-    height: 200px;
-    background-image: url(./hands-typing.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .container {
-    max-width: 480px;
-    height: 100%;
-    margin: auto;
-    padding-top: 2rem;
-    box-sizing: border-box;
+.text {
+    font-size: 48px;
+    font-weight: 800;
     text-align: center;
-    color: #fff;
+    color: transparent;
+}
+.items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    width: 240px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 10px dashed orangered;
+    margin: 0 auto 1rem;
     background-color: hsla(0, 0%, 0%, 0.1);
-  }
-  
+    background-image: url(./hands-typing.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+[data-clip="padding-box"] {
+    background-clip: padding-box;
+}
+[data-clip="content-box"] {
+    background-clip: content-box;
+}
+[data-clip="text"] {
+    background-clip: text;
+    -webkit-background-clip: text;
+}
